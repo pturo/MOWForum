@@ -5,4 +5,4 @@ po technologiach front-endowych. Projekt ten powstał w oparciu o tutorial: http
 
 Poniżej znajduje się projekt strony głównej forum (szablon nie ukończony).
 
-[!example](./screenshots/img01.png)
+![example](./screenshots/img01.png)
