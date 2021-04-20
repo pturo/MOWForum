@@ -29,6 +29,18 @@
             <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
             <div class="brand">Moje Forum</div>
         </div>
+        <!-- Search Box -->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Wszystko</option>
+                    <option value="titles">Tytuły</option>
+                    <option value="descriptions">Opisy</option>
+                </select>
+                <input type="text" name="q" placeholder="Szukaj...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
     </header>
 
     <div class="container">
@@ -141,7 +153,23 @@
                 </div>
             </div>
         </div>
+        <!-- More -->
     </div>
+
+    <!-- Forum Info -->
+    <div class="forum-info">
+        <div class="chart">
+            My Own World - Statystyki &nbsp;<i class="fa fa-bar-chart"></i>
+        </div>
+        <div>
+            <span><u>3 000</u> postów w <u>345</u> tematach przez <u>12 456</u> użytkowników</span><br>
+            <span>Ostatni post: <b><a href="#">Jakiś post</a></b> 15 lipca 2021 przez użytkownika <a href="#">Anon</a></span>
+        </div>
+    </div>
+
+    <footer>
+        <span>&copy; &nbsp;Paweł Turoń | Wszystkie prawa zastrzeżone.</span>
+    </footer>
 
     <script src="main.js"></script>
 </body>

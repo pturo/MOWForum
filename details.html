@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Own World - Szczegóły</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css">
+    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <nav class="navigation hide" id="navigation">
+                <ul class="nav-list">
+                    <span class="close-icon" onclick="showIconBar()"><i class="fa fa-close"></i></span>
+                    <li class="nav-item">
+                        <a href="#">Strona główna</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Forum</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#">Szczegóły</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" class="bar-icon" id="iconBar" onclick="hideIconBar()"><i class="fa fa-bars"></i></a>
+            <div class="brand">Moje Forum</div>
+        </div>
+        <!-- Search Box -->
+        <div class="search-box">
+            <div>
+                <select name="" id="">
+                    <option value="everything">Wszystko</option>
+                    <option value="titles">Tytuły</option>
+                    <option value="descriptions">Opisy</option>
+                </select>
+                <input type="text" name="q" placeholder="Szukaj...">
+                <button><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+
+        <!-- Navigation -->
+        <div class="navigate">
+            <a href="#">My Own World - Forums</a> >> <a href="#">Losowy Post</a>
+        </div>
+
+        <div class="topic-container">
+            <div class="head">
+                <div class="authors">Autor</div>
+                <div class="content">Temat: Tytuł posta (Przeczytano 133 razy)</div>
+            </div>
+            <div class="body">
+                <div class="authors">
+                    <div class="username"><a href="#">Nazwa użytkownika</a></div>
+                    <div>Rola</div>
+                    <img src="https://pixabay.com/get/g8121b31450105052149a3d3287bf7decc901a5c5beff564b1aab8a42e8c9872d3c29a1f0bc49daf867555f66f3c369ad_640.jpg" alt="">
+                    <div>Posty: <u>345</u></div>
+                    <div>Punktów: <u>1234</u></div>
+                </div>
+                <div class="content">
+                    Losowa zawartość z losowego tematu.
+                    <br>W celu sprawdzenia, jak to wygląda.
+                    <br><br>
+                    Nic więcej...
+                    <br><br>
+                    <hr>Z pozdrowieniami od Anon
+                    <div class="comment">
+                        <button onclick="showComment()">Skomentuj</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Comment input -->
+        <div class="comment-area hide" id="comment-area">
+            <textarea name="comment" id="" placeholder="Skomentuj..."></textarea>
+            <input type="submit" name="" id="" value="submit">
+        </div>
+
+        <!-- Show comments -->
+        <div class="comments-container">
+            <div class="head">
+                <div class="authors">Autor</div>
+                <div class="content">Komentarze</div>
+            </div>
+            <div class="body">
+                <div class="authors">
+                    <div class="AnotherUser"><a href="#">Nazwa użytkownika</a></div>
+                    <div>Rola</div>
+                    <img src="https://pixabay.com/get/g8121b31450105052149a3d3287bf7decc901a5c5beff564b1aab8a42e8c9872d3c29a1f0bc49daf867555f66f3c369ad_640.jpg" alt="">
+                    <div>Posty: <u>345</u></div>
+                    <div>Punktów: <u>1234</u></div>
+                </div>
+                <div class="content">
+                    Losowy komentarz z losowego tematu.
+                    <br>W celu sprawdzenia, jak to wygląda.
+                    <br><br>
+                    Nic więcej...
+                    <br><br>
+                    <hr>Z pozdrowieniami od AnonekDanonek
+                    <div class="comment">
+                        <button onclick="showReply()">Odpowiedz</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reply input -->
+            <div class="comment-area hide" id="reply-area">
+                <textarea name="comment" id="" placeholder="Odpowiedz..."></textarea>
+                <input type="submit" name="" id="" value="submit">
+            </div>
+        </div>
+
+    <footer>
+        <span>&copy; &nbsp;Paweł Turoń | Wszystkie prawa zastrzeżone.</span>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
